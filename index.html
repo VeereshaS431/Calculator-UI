@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .container{
+            width: 400px;
+            height: 700px;
+            /* border: 2px solid black; */
+            border-radius: 40px;
+            background-color: rgb(99, 101, 102);
+            margin: 20px auto;
+            box-shadow: 5px 5px;
+        }
+        
+        .icon1, .icon2, .icon3, .fa-solid{
+            display: inline-block;
+        }
+
+        .screen{
+            width: 350px;
+            height: 100px;
+            margin-top: -10px;
+            /* border: 2px solid black; */
+            margin-left: 23px;
+            border-radius: 10px;
+            background-color: rgb(103, 129, 103);
+            box-shadow: 2px 2px;
+        }
+
+        .button{
+            width: 350px;
+            height: 500px;
+            /* border: 2px solid black; */
+            margin-left: 50px;
+            display: flex;
+            row-gap: 10px;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            /* align-content: space-evenly; */
+            align-items: flex-end;
+            /* background-color: black; */
+            
+        }
+         .btn1{
+            /* position: relative;
+            top: -45px; */
+            width: 50px;
+            height: 50px;
+            /* border: 2px solid black; */
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(35, 57, 73, 0.364);
+        
+         }
+        
+         .btn{
+            display: flex;
+            flex-wrap: wrap;
+            /* justify-content: space-evenly; */
+            /* align-content: space-evenly; */
+            /* align-items: flex-end; */
+            column-gap: 30px;
+         }
+
+         .btn2{
+            /* border: 2px solid black; */
+            width: 220px;
+            display: flex;
+            /* justify-content: space-evenly; */
+            /* justify-content: left; */
+            /* align-content: space-evenly; */
+            /* align-items: flex-end; */
+            column-gap: 30px;
+            position: relative;
+            top: -53px;  
+         }
+
+         .btn1:hover{
+            background-color: rgb(112, 118, 118);
+            box-shadow: 5px 5px;
+         }
+
+         i:hover{
+            color: aliceblue;
+        
+         }
+
+         .button{
+            margin-top: -10px;
+         }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <h4 style="margin-left: 10px; position: relative; left: 20px;" class="icon1">08:23</h4>
+            <div class="icon2" style="border: 4px solid black; width: 50px; border-radius: 10px; margin-left: 100px; position: relative; top: -3px;"></div>
+            <div class="icon3" style="border: 8px solid black;  border-radius: 50px; margin-left: 20px;"></div>
+            <i style="margin-left: 50px; font-size: 20px;" class="fa-solid fa-signal"></i>
+            <i style="font-size: 25px; margin-left: 20px;position: relative; top: 3px;" class="fa-solid fa-battery-full"></i>   
+        </div>
+
+        <div class="screen">
+            <h2 style="margin-left: 280px; position: relative; top: 20px;">10+12</h2>
+            <h1 style="margin-top: -15px; margin-left: 290px; position: relative; top: 20px;">=22</h1>
+        </div>
+
+        <div class="button">
+            <div class="btn">
+                <div class="btn1"><h2>AC</h2></div>
+                <div class="btn1"><h1>+/-</h1></div>
+                <div class="btn1"><h1>%</h1></div>
+                <div class="btn1"><i style="font-size: 25px;" class="fa-solid fa-divide"></i></div>
+            </div>
+
+            <div class="btn">
+                <div class="btn1"><h1>7</h1></div>
+                <div class="btn1"><h1>8</h1></div>
+                <div class="btn1"><h1>9</h1></div>
+                <div class="btn1"><i style="font-size: 25px;" class="fa-solid fa-xmark"></i></div>
+            </div>
+
+            <div class="btn">
+                <div class="btn1"><h1>4</h1></div>
+                <div class="btn1"><h1>5</h1></div>
+                <div class="btn1"><h1>6</h1></div>
+                <div class="btn1"><i style="font-size: 25px;" class="fa-solid fa-minus"></i></div>
+            </div>
+
+            <div class="btn">
+                <div class="btn1"><h1>1</h1></div>
+                <div class="btn1"><h1>2</h1></div>
+                <div class="btn1"><h1>3</h1></div>
+                <div class="btn1" style="height: 140px;"> <h1>=</h1></div>
+                <div class="btn2">
+                    <div class="btn1"><h1>0</h1></div>
+                    <div class="btn1"><h1>.</h1></div>
+                    <div class="btn1"><h1>+</h1></div>
+                    <!-- <div class="btn1"></div> -->
+                </div>
+            </div>
+             </div>
+             
+             <div class="bottom">
+                <i style="margin-left: 100px; font-size: 20px;" class="fa-solid fa-bars"></i>
+                <i style="margin-left: 70px; font-size: 20px;" class="fa-solid fa-house"></i>
+                <i style="margin-left: 70px; font-size: 20px;" class="fa-solid fa-angle-left"></i>
+             </div>
+        
+    </div>
+</body>
+</html>
